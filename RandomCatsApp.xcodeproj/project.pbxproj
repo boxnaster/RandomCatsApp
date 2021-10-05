@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70E31BD270B78B000F92CD2 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E31BC270B78B000F92CD2 /* MainNavigationController.swift */; };
+		C70E31C2270B7A8100F92CD2 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E31C1270B7A8100F92CD2 /* SingleImageViewController.swift */; };
+		C70E31C7270B8CF800F92CD2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E31C6270B8CF800F92CD2 /* SearchViewController.swift */; };
+		C70E31CC270C22A200F92CD2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E31CB270C22A200F92CD2 /* MainTabBarController.swift */; };
+		C70E31D1270C24AC00F92CD2 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E31D0270C24AC00F92CD2 /* UploadViewController.swift */; };
+		C70E31D9270C24FF00F92CD2 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70E31D8270C24FF00F92CD2 /* FavouritesViewController.swift */; };
 		C7E3964C27061DD60073E3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3964B27061DD60073E3BD /* AppDelegate.swift */; };
 		C7E3964E27061DD60073E3BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3964D27061DD60073E3BD /* SceneDelegate.swift */; };
 		C7E3965027061DD60073E3BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E3964F27061DD60073E3BD /* ViewController.swift */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70E31BC270B78B000F92CD2 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		C70E31C1270B7A8100F92CD2 /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
+		C70E31C6270B8CF800F92CD2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C70E31CB270C22A200F92CD2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C70E31D0270C24AC00F92CD2 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		C70E31D8270C24FF00F92CD2 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		C7E3964827061DD60073E3BD /* RandomCatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomCatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E3964B27061DD60073E3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E3964D27061DD60073E3BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +118,12 @@
 				C7E3965427061DDD0073E3BD /* Assets.xcassets */,
 				C7E3965627061DDD0073E3BD /* LaunchScreen.storyboard */,
 				C7E3965927061DDD0073E3BD /* Info.plist */,
+				C70E31BC270B78B000F92CD2 /* MainNavigationController.swift */,
+				C70E31C1270B7A8100F92CD2 /* SingleImageViewController.swift */,
+				C70E31C6270B8CF800F92CD2 /* SearchViewController.swift */,
+				C70E31CB270C22A200F92CD2 /* MainTabBarController.swift */,
+				C70E31D0270C24AC00F92CD2 /* UploadViewController.swift */,
+				C70E31D8270C24FF00F92CD2 /* FavouritesViewController.swift */,
 			);
 			path = RandomCatsApp;
 			sourceTree = "<group>";
@@ -135,10 +153,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E3967227061DDE0073E3BD /* Build configuration list for PBXNativeTarget "RandomCatsApp" */;
 			buildPhases = (
+				C7E396812706234C0073E3BD /* ShellScript */,
 				C7E3964427061DD60073E3BD /* Sources */,
 				C7E3964527061DD60073E3BD /* Frameworks */,
 				C7E3964627061DD60073E3BD /* Resources */,
-				C7E396812706234C0073E3BD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -279,8 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70E31D9270C24FF00F92CD2 /* FavouritesViewController.swift in Sources */,
 				C7E3965027061DD60073E3BD /* ViewController.swift in Sources */,
+				C70E31D1270C24AC00F92CD2 /* UploadViewController.swift in Sources */,
+				C70E31C2270B7A8100F92CD2 /* SingleImageViewController.swift in Sources */,
 				C7E3964C27061DD60073E3BD /* AppDelegate.swift in Sources */,
+				C70E31CC270C22A200F92CD2 /* MainTabBarController.swift in Sources */,
+				C70E31BD270B78B000F92CD2 /* MainNavigationController.swift in Sources */,
+				C70E31C7270B8CF800F92CD2 /* SearchViewController.swift in Sources */,
 				C7E3964E27061DD60073E3BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
