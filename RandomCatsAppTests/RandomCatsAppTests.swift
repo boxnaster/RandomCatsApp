@@ -5,8 +5,8 @@
 //  Created by Анастасия Тимофеева on 30.09.2021.
 //
 
-import XCTest
 @testable import RandomCatsApp
+import XCTest
 
 class RandomCatsAppTests: XCTestCase {
 

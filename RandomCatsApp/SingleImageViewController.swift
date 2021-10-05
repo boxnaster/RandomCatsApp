@@ -10,6 +10,7 @@ import UIKit
 
 class SingleImageViewController: UIViewController {
     private var isLiked = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Cat"
@@ -23,10 +24,12 @@ class SingleImageViewController: UIViewController {
             isLiked = false
         }
     }
-    @IBOutlet weak var breedsLabel: UILabel!
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var catImage: UIImageView!
-    @IBAction func likeButtonAction(_ sender: UIButton) {
+
+    @IBOutlet var breedsLabel: UILabel!
+    @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet var catImage: UIImageView!
+
+    @IBAction private func likeButtonAction(_ sender: UIButton) {
         flipLikeButton(button: sender)
     }
 }
