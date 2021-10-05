@@ -1,4 +1,4 @@
-swiftlint_version: 0.43.1
+swiftlint_version: 0.44.0
 
 disabled_rules:
     - comment_spacing

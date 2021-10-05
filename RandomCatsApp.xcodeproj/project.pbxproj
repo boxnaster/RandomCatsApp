@@ -153,7 +153,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E3967227061DDE0073E3BD /* Build configuration list for PBXNativeTarget "RandomCatsApp" */;
 			buildPhases = (
-				C7E396812706234C0073E3BD /* ShellScript */,
+				C70E31F3270C39AA00F92CD2 /* Swiftlint */,
 				C7E3964427061DD60073E3BD /* Sources */,
 				C7E3964527061DD60073E3BD /* Frameworks */,
 				C7E3964627061DD60073E3BD /* Resources */,
@@ -273,7 +273,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C7E396812706234C0073E3BD /* ShellScript */ = {
+		C70E31F3270C39AA00F92CD2 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,6 +282,7 @@
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
