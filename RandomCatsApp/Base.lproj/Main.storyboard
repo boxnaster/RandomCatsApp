@@ -20,8 +20,7 @@
                                 <rect key="frame" x="54" y="209" width="306" height="306"/>
                                 <color key="backgroundColor" red="0.85208386182785034" green="0.85041457414627075" blue="0.88017719984054565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="306" id="deB-Hp-iiM"/>
-                                    <constraint firstAttribute="height" constant="306.00000000000006" id="hIC-DF-G3Z"/>
+                                    <constraint firstAttribute="width" secondItem="jqq-lo-duW" secondAttribute="height" multiplier="1:1" id="v0O-um-XTL"/>
                                 </constraints>
                                 <state key="normal" title="Cat Image" image="scale_1200">
                                     <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,8 +33,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jqq-lo-duW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6sP-KO-Sce"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jqq-lo-duW" secondAttribute="bottom" constant="297.99999999999994" id="7yV-06-0DV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jqq-lo-duW" secondAttribute="trailing" constant="54" id="8Hu-Qg-NY3"/>
+                            <constraint firstItem="jqq-lo-duW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="mJC-MR-L74"/>
+                            <constraint firstItem="jqq-lo-duW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="zus-RP-BpZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bnj-gu-tVY"/>
@@ -60,13 +60,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: boxes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eun-RU-ipD">
-                                <rect key="frame" x="20" y="733" width="131" height="21"/>
+                                <rect key="frame" x="20" y="718.5" width="131" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWu-oM-6tk">
-                                <rect key="frame" x="20" y="598" width="104" height="50"/>
+                                <rect key="frame" x="20" y="584" width="104" height="50"/>
                                 <state key="normal" title="Button" image="heart"/>
                                 <connections>
                                     <action selector="likeButtonAction:" destination="ar6-4j-dEU" eventType="touchUpInside" id="rmU-zB-HZs"/>
@@ -79,24 +79,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="scale_1200" translatesAutoresizingMaskIntoConstraints="NO" id="SuK-hu-nqg">
-                                <rect key="frame" x="-178" y="88" width="770" height="480"/>
+                                <rect key="frame" x="-26" y="88" width="466" height="466"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="480" id="1Dx-kh-BEh"/>
-                                    <constraint firstAttribute="width" constant="770" id="eCe-Ts-JeJ"/>
+                                    <constraint firstAttribute="width" secondItem="SuK-hu-nqg" secondAttribute="height" multiplier="1:1" id="1VL-mx-6UT"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nld-6h-8FQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SuK-hu-nqg" firstAttribute="top" secondItem="Nld-6h-8FQ" secondAttribute="top" id="cLL-m6-Eua"/>
-                            <constraint firstItem="SuK-hu-nqg" firstAttribute="centerX" secondItem="Nld-6h-8FQ" secondAttribute="centerX" id="cgO-Z6-q1n"/>
-                            <constraint firstItem="Eun-RU-ipD" firstAttribute="top" secondItem="qui-C6-JFq" secondAttribute="bottom" constant="10" id="kiU-4d-8hr"/>
-                            <constraint firstItem="qui-C6-JFq" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="oSs-6S-sH0"/>
-                            <constraint firstItem="JWu-oM-6tk" firstAttribute="top" secondItem="SuK-hu-nqg" secondAttribute="bottom" constant="30" id="qt2-18-ZAY"/>
-                            <constraint firstItem="Eun-RU-ipD" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="t7F-Nu-B1f"/>
-                            <constraint firstItem="qui-C6-JFq" firstAttribute="top" secondItem="JWu-oM-6tk" secondAttribute="bottom" constant="10" id="wcv-tL-kDJ"/>
-                            <constraint firstItem="JWu-oM-6tk" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="zeX-u7-0Lu"/>
+                            <constraint firstItem="Eun-RU-ipD" firstAttribute="top" secondItem="qui-C6-JFq" secondAttribute="bottom" constant="10" id="A9g-Bi-Anq"/>
+                            <constraint firstItem="Eun-RU-ipD" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="D78-8R-P05"/>
+                            <constraint firstItem="Nld-6h-8FQ" firstAttribute="leading" secondItem="SuK-hu-nqg" secondAttribute="leading" constant="26" id="IaY-yu-YHo"/>
+                            <constraint firstItem="qui-C6-JFq" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="QfY-mO-gfU"/>
+                            <constraint firstItem="JWu-oM-6tk" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="e8y-aV-n8D"/>
+                            <constraint firstItem="SuK-hu-nqg" firstAttribute="top" secondItem="Nld-6h-8FQ" secondAttribute="top" id="hZq-hx-qAG"/>
+                            <constraint firstItem="qui-C6-JFq" firstAttribute="top" secondItem="JWu-oM-6tk" secondAttribute="bottom" constant="10" id="iwF-Sh-LCb"/>
+                            <constraint firstItem="SuK-hu-nqg" firstAttribute="trailing" secondItem="Nld-6h-8FQ" secondAttribute="trailing" constant="26" id="m5t-TH-4ss"/>
+                            <constraint firstItem="JWu-oM-6tk" firstAttribute="top" secondItem="SuK-hu-nqg" secondAttribute="bottom" constant="30" id="ph3-9X-xqU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wPa-mg-2Km"/>
