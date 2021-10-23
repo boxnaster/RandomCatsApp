@@ -52,34 +52,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwK-Rf-lH8">
-                                <rect key="frame" x="161" y="478" width="0.0" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: boxes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eun-RU-ipD">
-                                <rect key="frame" x="20" y="718.5" width="131" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: boxes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eun-RU-ipD">
+                                <rect key="frame" x="20" y="730.5" width="374" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWu-oM-6tk">
-                                <rect key="frame" x="20" y="584" width="104" height="50"/>
+                                <rect key="frame" x="20" y="522" width="104" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JWu-oM-6tk" secondAttribute="height" multiplier="1:1" id="cek-XH-GPU"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="heart"/>
                                 <connections>
                                     <action selector="likeButtonAction:" destination="ar6-4j-dEU" eventType="touchUpInside" id="rmU-zB-HZs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Breeds:  - British Longhair - Abyssinian" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qui-C6-JFq">
-                                <rect key="frame" x="20" y="658" width="157" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breeds:  - British Longhair - Abyssinian                                    " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qui-C6-JFq">
+                                <rect key="frame" x="20" y="646" width="374" height="64.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="scale_1200" translatesAutoresizingMaskIntoConstraints="NO" id="SuK-hu-nqg">
-                                <rect key="frame" x="-26" y="88" width="466" height="466"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="414"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SuK-hu-nqg" secondAttribute="height" multiplier="1:1" id="1VL-mx-6UT"/>
                                 </constraints>
@@ -88,22 +84,25 @@
                         <viewLayoutGuide key="safeArea" id="Nld-6h-8FQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Eun-RU-ipD" firstAttribute="top" secondItem="qui-C6-JFq" secondAttribute="bottom" constant="10" id="A9g-Bi-Anq"/>
-                            <constraint firstItem="Eun-RU-ipD" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="D78-8R-P05"/>
-                            <constraint firstItem="Nld-6h-8FQ" firstAttribute="leading" secondItem="SuK-hu-nqg" secondAttribute="leading" constant="26" id="IaY-yu-YHo"/>
-                            <constraint firstItem="qui-C6-JFq" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="QfY-mO-gfU"/>
-                            <constraint firstItem="JWu-oM-6tk" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="e8y-aV-n8D"/>
+                            <constraint firstItem="Eun-RU-ipD" firstAttribute="top" secondItem="qui-C6-JFq" secondAttribute="bottom" constant="20" id="0q3-7U-Ai3"/>
+                            <constraint firstItem="JWu-oM-6tk" firstAttribute="top" secondItem="SuK-hu-nqg" secondAttribute="bottom" constant="20" id="1GT-Fp-uv4"/>
+                            <constraint firstItem="Nld-6h-8FQ" firstAttribute="trailing" secondItem="JWu-oM-6tk" secondAttribute="trailing" priority="100" constant="290" id="8j4-Xh-6bP"/>
+                            <constraint firstItem="Nld-6h-8FQ" firstAttribute="leading" secondItem="SuK-hu-nqg" secondAttribute="leading" id="IaY-yu-YHo"/>
+                            <constraint firstItem="Eun-RU-ipD" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="NJn-ch-Osd"/>
+                            <constraint firstItem="JWu-oM-6tk" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="eFu-aB-uk0"/>
                             <constraint firstItem="SuK-hu-nqg" firstAttribute="top" secondItem="Nld-6h-8FQ" secondAttribute="top" id="hZq-hx-qAG"/>
-                            <constraint firstItem="qui-C6-JFq" firstAttribute="top" secondItem="JWu-oM-6tk" secondAttribute="bottom" constant="10" id="iwF-Sh-LCb"/>
-                            <constraint firstItem="SuK-hu-nqg" firstAttribute="trailing" secondItem="Nld-6h-8FQ" secondAttribute="trailing" constant="26" id="m5t-TH-4ss"/>
-                            <constraint firstItem="JWu-oM-6tk" firstAttribute="top" secondItem="SuK-hu-nqg" secondAttribute="bottom" constant="30" id="ph3-9X-xqU"/>
+                            <constraint firstItem="SuK-hu-nqg" firstAttribute="trailing" secondItem="Nld-6h-8FQ" secondAttribute="trailing" id="m5t-TH-4ss"/>
+                            <constraint firstItem="qui-C6-JFq" firstAttribute="top" secondItem="JWu-oM-6tk" secondAttribute="bottom" constant="20" id="pp2-2d-sAQ"/>
+                            <constraint firstItem="Nld-6h-8FQ" firstAttribute="trailing" secondItem="Eun-RU-ipD" secondAttribute="trailing" constant="20" id="sch-NY-WoZ"/>
+                            <constraint firstItem="qui-C6-JFq" firstAttribute="leading" secondItem="Nld-6h-8FQ" secondAttribute="leading" constant="20" id="t3o-yb-zfc"/>
+                            <constraint firstItem="Nld-6h-8FQ" firstAttribute="trailing" secondItem="qui-C6-JFq" secondAttribute="trailing" constant="20" id="zEM-3K-5M9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wPa-mg-2Km"/>
                     <connections>
                         <outlet property="breedsLabel" destination="qui-C6-JFq" id="tlA-iv-Fqw"/>
-                        <outlet property="catImage" destination="SuK-hu-nqg" id="ddF-8c-eCE"/>
                         <outlet property="categoryLabel" destination="Eun-RU-ipD" id="b0j-4x-dnZ"/>
+                        <outlet property="imageView" destination="SuK-hu-nqg" id="FZW-og-4Az"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUz-He-Gd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -156,8 +155,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploaded pictures will be here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-3u-mYx">
-                                <rect key="frame" x="75" y="416.5" width="264" height="24"/>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploaded pictures will be here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-3u-mYx">
+                                <rect key="frame" x="75" y="416.5" width="264.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -184,8 +183,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite pictures will be here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXT-HV-53P">
-                                <rect key="frame" x="77.5" y="416.5" width="259" height="24"/>
+                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite pictures will be here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXT-HV-53P">
+                                <rect key="frame" x="77.5" y="416.5" width="259.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

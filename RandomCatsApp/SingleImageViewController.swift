@@ -25,9 +25,9 @@ class SingleImageViewController: UIViewController {
         }
     }
 
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var breedsLabel: UILabel!
     @IBOutlet var categoryLabel: UILabel!
-    @IBOutlet var catImage: UIImageView!
 
     @IBAction private func likeButtonAction(_ sender: UIButton) {
         flipLikeButton(button: sender)
